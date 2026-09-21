@@ -1,38 +1,33 @@
-/*
-  DISCLAIMER: This example code is provided for educational and demonstration purposes.
-  It may not represent best practices for security and/or performance and is not intended for production use.
-*/
 function generateScriptConfig() {
   window.storyMapsEmbedConfig = {
     storyId: "9fe2df47047848b5a6d27bfb9d39383b",
     rootNode: ".storymaps-root",
-      font: {
-        title: {
-          fontFamily: "Oslo Sans",
-          weight: {
-            normal: 400,
-            bold: 700
-          }
-        },
-        body: {
-          fontFamily: "Oslo Sans",
-          weight: {
-            normal: 400,
-            bold: 700
-          }
+
+    font: {
+      title: {
+        fontFamily: "Oslo Sans",
+        weight: {
+          normal: 400,
+          bold: 700
+        }
+      },
+      body: {
+        fontFamily: "Oslo Sans",
+        weight: {
+          normal: 400,
+          bold: 700
         }
       }
     }
-  }
-
+  };
+}
 
 function createScriptedEmbed() {
-    const script = document.createElement('script');
-    script.id = 'embed-script';
-    script.src =`https://storymaps.arcgis.com/embed/view`;
-    document.body.appendChild(script);
-  }
+  const script = document.createElement("script");
+  script.id = "embed-script";
+  script.src = "https://storymaps.arcgis.com/embed/view";
+  document.body.appendChild(script);
+}
 
-
-generateScriptConfig()
-createScriptedEmbed()
+generateScriptConfig();
+createScriptedEmbed();
