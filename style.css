@@ -76,3 +76,30 @@ body.no-scroll {
 body {
   margin: 0;
 }
+
+/* Header */
+.site-header {
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dddddd;
+  font-family: "Oslo Sans", sans-serif;
+  position: relative;
+  z-index: 10;
+}
+
+.header-left img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.header-title {
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
