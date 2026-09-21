@@ -1,7 +1,7 @@
 function generateScriptConfig() {
   window.storyMapsEmbedConfig = {
     storyId: "9fe2df47047848b5a6d27bfb9d39383b",
-    rootNode: ".storymaps-root",
+    rootSelector: ".storymaps-root",
 
     font: {
       title: {
