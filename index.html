@@ -1,0 +1,58 @@
+<!--
+  DISCLAIMER: This example code is provided for educational and demonstration purposes.
+  It may not represent best practices for security and/or performance and is not intended for production use.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Add other optional metatags here (e.g. to identify the content of this page 
+        for search engines) -->
+    <title>Splash Screen Sample</title>
+    <!-- Reference Google Fonts and CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class="no-scroll">
+
+    <!-- Splash overlay -->
+    <div class="splash-overlay" id="splashOverlay">
+      <!-- Splash screen -->
+      <div class="splash-screen">
+        <img src="Oslo-logo-morkeblaa-RGB.svg" height="50-px" alt="Oslo Logo">
+        <h1>Velkommen til mitt testprosjekt!</h1>
+        <p>Dette pop-up vinduet skal brukes for å teste hvordan det vil se ut i en StoryMap.</p> 
+        <p>Trykk på knappen under for å gå videre.</p>
+        <button onclick="closeSplashScreen()">Ja, jeg vil <i>gå</i> videre!</button>
+      </div>
+    </div>
+
+    <!-- Place this root container where you want the story to appear in the page -->
+    <div class="storymaps-root"></div>
+    <!-- This is the config section. The storyId identifies the story to be loaded -->
+    <script>
+      window.storyMapsEmbedConfig = {
+        storyId: '9fe2df47047848b5a6d27bfb9d39383b',
+        rootSelector: '.storymaps-root'
+      };
+    </script>
+    <!-- This final script tag loads the StoryMaps presentation engine  -->
+    <script
+      id="embed-script"
+      src="https://storymaps.arcgis.com/embed/view"
+    ></script>
+
+    <script>
+      // Function to close the splash screen and reveal the story
+      function closeSplashScreen() {
+        // Hide the splash screen
+        document.getElementById('splashOverlay').style.display = 'none';
+
+        // Enable scrolling on the main page
+        document.body.classList.remove('no-scroll');
+      }
+    </script>
+
+  </body>
+</html>
