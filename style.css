@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../Font/Fonts/OsloSansOffice-Regular.ttf") format("truetype");
+  src: url("../Fonts/OsloSansOffice-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../Font/Fonts/OsloSansOffice-Bold.ttf") format("truetype");
+  src: url("../Fonts/OsloSansOffice-Bold.ttf") format("truetype");
 }
 body.no-scroll {
   overflow: hidden; /* Prevent the story scrolling while splash screen in place */
