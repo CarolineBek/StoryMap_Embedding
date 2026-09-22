@@ -79,27 +79,27 @@ body {
 
 /* Header */
 .site-header {
-  height: 70px;
+  height: 70;
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 30;
   box-sizing: border-box;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1 solid #dddddd;
   font-family: "Oslo Sans", sans-serif;
   position: relative;
   z-index: 10;
 }
 
 .header-left img {
-  height: 40px;
+  height: 40;
   width: auto;
   display: block;
 }
 
 .header-title {
-  margin-left: 25px;
-  font-size: 20px;
+  margin-left: 25;
+  font-size: 20;
   font-weight: 700;
   color: #000000;
 }
@@ -131,10 +131,48 @@ footer {
 footer a {
   color: black;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 15;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6 8 6 16;
+  text-decoration: none;
+  font-size: 25;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160; /* Same as the width of the sidebar */
+  padding: 0 10;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450) {
+  .sidenav {padding-top: 15;}
+  .sidenav a {font-size: 18;}
+}
