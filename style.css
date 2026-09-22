@@ -78,17 +78,18 @@ body {
 }
 
 /* Header */
-.site-header {
-  height: 70;
-  background-color: #ffffff;
+header {
+  background-color: #e46116;
   display: flex;
   align-items: center;
-  padding: 0px 30px;
-  box-sizing: border-box;
-  border-bottom: 1 solid #dddddd;
-  font-family: "Oslo Sans", sans-serif;
-  position: relative;
-  z-index: 10;
+  justify-content: space-between;
+  color: white;
+  position: sticky;
+  top: 0;
+  height: 3rem;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+  font-family: "Oslo Sans";
 }
 
 .header-left img {
