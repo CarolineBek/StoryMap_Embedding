@@ -88,12 +88,11 @@ header {
   top: 0;
   min-height: 70px;
   z-index: 1000; /* Ensure it stays on top of other elements */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
   font-family: "Oslo Sans";
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
   display: block;
 }
@@ -102,7 +101,7 @@ header {
   margin-left: 25px;
   font-size: 20px;
   font-weight: 700;
-  color: #000000;
+  color: black;
 }
 
 .nav-tabs {
