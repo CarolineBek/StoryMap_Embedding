@@ -77,38 +77,7 @@
     <div class="main">
       ...
     </div>
-
-    <div class="card" onclick="openModal()">
-      Building A
-    </div>
-
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span onclick="closeModal()" class="close">&times;
-        </span>
-
-        <h2>Building A</h2>
-
-        <p>This is information about Building A.</p>
-      </div>
-    </div>
-
-    <nav>
-      #eksempel1Eksempel 1</a>
-      #eksempel2Eksempel 2</a>
-    </nav>
-
-    <script>
-    const links = document.querySelectorAll("nav a");
-
-    links.forEach(link => {
-        link.addEventListener("click", function() {
-            links.forEach(l => l.classList.remove("active"));
-            this.classList.add("active");
-        });
-    });
-    </script>
-    
+ 
     <script>
     function openModal() {
       document.getElementById("modal").style.display = "block";
