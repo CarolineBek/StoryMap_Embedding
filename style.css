@@ -123,13 +123,13 @@ body {
 /* Footer Styles */
 footer {
   background-color: #ffffff;
-  color: white;
+  color: black;
   padding: 20px;
   text-align: center;
 }
 
 footer a {
-  color: white;
+  color: black;
   text-decoration: none;
   margin: 0 15px;
 }
